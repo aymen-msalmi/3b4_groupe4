@@ -22,4 +22,24 @@ int main()
     if(bv3.idbureau==-1)
         printf("introuvable");
     return 0;
+
+
+
+// aymen work 
+
+    Candidat Candidat1= {"mohamed","mm",'h',00223344,22,12,1980},candidat2= {"ali","benmohamed",'h',11445278,15,06,2000},candidat3;
+    int x=ajouter("observateur.txt", Candidat1);
+
+    x=modifier("listeElectoral.txt",00223344,candidat2 );
+
+    if(x==1)
+        printf("\nModification de la liste avec succés");
+    else printf("\nechec Modification");
+    x=supprimer("listeElectoral.txt",00223344 );
+    if(x==1)
+        printf("\nSuppression de la liste electroarle avec succés");
+    else printf("\nechec Suppression");
+    candidat3=chercher("listeElectoral.txt",34527868);
+    if(candidat3.CIN==-1)
+        printf("introuvable");
 }
