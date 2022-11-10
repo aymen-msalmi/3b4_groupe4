@@ -1,0 +1,6 @@
+prog:utilisateur.o main22.o
+        gcc utilisateur.o main22.o -o prog 
+          main.o:main22.c
+         gcc -c main22.c 
+         utilisateur.o:utilisateur.c
+           gcc -c utilisateur.c
