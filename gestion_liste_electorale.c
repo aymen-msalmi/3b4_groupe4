@@ -19,7 +19,7 @@ int modifier( char *filename, int CIN ,Candidat Candidat1 )
     FILE * f2=fopen("bv2.txt", "w");
     if(f!=NULL && f2!=NULL)
     {
-        while(fscanf(f,"%s %s %c %d %d %d %d\n",Candidat1.Nom, Candidat1.Prenom, &Candidat1.sex, &Candidat1.date.jour, &Candidat1.date.mois, &Candidat1.date.jour)!=EOF)
+        while(fscanf(f,"%s %s %c %d %d %d %d\n",Candidat1.Nom, Candidat1.Prenom, Candidat1.sex, &Candidat1.date.jour, &Candidat1.date.mois, &Candidat1.date.jour)!=EOF)
         {
             if(Candidat1.CIN==CIN)
 
